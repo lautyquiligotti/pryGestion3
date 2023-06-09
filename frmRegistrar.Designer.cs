@@ -32,10 +32,9 @@
             this.txtDetalleActividad = new System.Windows.Forms.TextBox();
             this.lblTipoActividad = new System.Windows.Forms.Label();
             this.dtpFecha = new System.Windows.Forms.DateTimePicker();
-            this.label3 = new System.Windows.Forms.Label();
             this.lstTipoDeActividad = new System.Windows.Forms.ComboBox();
             this.lblDetalleActividad = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.mrcReunion = new System.Windows.Forms.GroupBox();
             this.optNo = new System.Windows.Forms.RadioButton();
             this.optSi = new System.Windows.Forms.RadioButton();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -45,8 +44,7 @@
             this.chkRepositorio = new System.Windows.Forms.CheckBox();
             this.btnGrabar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
-            this.label5 = new System.Windows.Forms.Label();
-            this.groupBox1.SuspendLayout();
+            this.mrcReunion.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -62,8 +60,9 @@
             // txtDetalleActividad
             // 
             this.txtDetalleActividad.Location = new System.Drawing.Point(118, 101);
+            this.txtDetalleActividad.Multiline = true;
             this.txtDetalleActividad.Name = "txtDetalleActividad";
-            this.txtDetalleActividad.Size = new System.Drawing.Size(100, 20);
+            this.txtDetalleActividad.Size = new System.Drawing.Size(162, 95);
             this.txtDetalleActividad.TabIndex = 1;
             // 
             // lblTipoActividad
@@ -82,16 +81,6 @@
             this.dtpFecha.Size = new System.Drawing.Size(200, 20);
             this.dtpFecha.TabIndex = 3;
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(72, 415);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(423, 13);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Relevamient, propuesta, diagnostico, analisis, diagrama de base de datos, program" +
-    "acion";
-            // 
             // lstTipoDeActividad
             // 
             this.lstTipoDeActividad.FormattingEnabled = true;
@@ -109,21 +98,21 @@
             this.lblDetalleActividad.TabIndex = 6;
             this.lblDetalleActividad.Text = "Detalle actividad";
             // 
-            // groupBox1
+            // mrcReunion
             // 
-            this.groupBox1.Controls.Add(this.optNo);
-            this.groupBox1.Controls.Add(this.optSi);
-            this.groupBox1.Location = new System.Drawing.Point(18, 139);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(200, 100);
-            this.groupBox1.TabIndex = 7;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Reunion";
+            this.mrcReunion.Controls.Add(this.optNo);
+            this.mrcReunion.Controls.Add(this.optSi);
+            this.mrcReunion.Location = new System.Drawing.Point(18, 213);
+            this.mrcReunion.Name = "mrcReunion";
+            this.mrcReunion.Size = new System.Drawing.Size(220, 71);
+            this.mrcReunion.TabIndex = 7;
+            this.mrcReunion.TabStop = false;
+            this.mrcReunion.Text = "Reunion";
             // 
             // optNo
             // 
             this.optNo.AutoSize = true;
-            this.optNo.Location = new System.Drawing.Point(41, 62);
+            this.optNo.Location = new System.Drawing.Point(131, 29);
             this.optNo.Name = "optNo";
             this.optNo.Size = new System.Drawing.Size(39, 17);
             this.optNo.TabIndex = 1;
@@ -148,9 +137,9 @@
             this.groupBox2.Controls.Add(this.chkNotasReunion);
             this.groupBox2.Controls.Add(this.chkInvestigacion);
             this.groupBox2.Controls.Add(this.chkRepositorio);
-            this.groupBox2.Location = new System.Drawing.Point(18, 246);
+            this.groupBox2.Location = new System.Drawing.Point(18, 302);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(317, 100);
+            this.groupBox2.Size = new System.Drawing.Size(262, 100);
             this.groupBox2.TabIndex = 8;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Tareas";
@@ -197,7 +186,7 @@
             // 
             // btnGrabar
             // 
-            this.btnGrabar.Location = new System.Drawing.Point(347, 377);
+            this.btnGrabar.Location = new System.Drawing.Point(163, 433);
             this.btnGrabar.Name = "btnGrabar";
             this.btnGrabar.Size = new System.Drawing.Size(75, 23);
             this.btnGrabar.TabIndex = 9;
@@ -207,43 +196,34 @@
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(224, 377);
+            this.btnCancelar.Location = new System.Drawing.Point(38, 433);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(75, 23);
             this.btnCancelar.TabIndex = 10;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(72, 437);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(158, 13);
-            this.label5.TabIndex = 11;
-            this.label5.Text = "Grabar la seleccion en variables";
-            // 
             // frmRegistrar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.label5);
+            this.ClientSize = new System.Drawing.Size(329, 513);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnGrabar);
             this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.mrcReunion);
             this.Controls.Add(this.lblDetalleActividad);
             this.Controls.Add(this.lstTipoDeActividad);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.dtpFecha);
             this.Controls.Add(this.lblTipoActividad);
             this.Controls.Add(this.txtDetalleActividad);
             this.Controls.Add(this.lblFecha);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmRegistrar";
             this.Text = "frmRegistrar";
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.mrcReunion.ResumeLayout(false);
+            this.mrcReunion.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
@@ -257,10 +237,9 @@
         private System.Windows.Forms.TextBox txtDetalleActividad;
         private System.Windows.Forms.Label lblTipoActividad;
         private System.Windows.Forms.DateTimePicker dtpFecha;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox lstTipoDeActividad;
         private System.Windows.Forms.Label lblDetalleActividad;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox mrcReunion;
         private System.Windows.Forms.RadioButton optNo;
         private System.Windows.Forms.RadioButton optSi;
         private System.Windows.Forms.GroupBox groupBox2;
@@ -270,6 +249,5 @@
         private System.Windows.Forms.CheckBox chkRepositorio;
         private System.Windows.Forms.Button btnGrabar;
         private System.Windows.Forms.Button btnCancelar;
-        private System.Windows.Forms.Label label5;
     }
 }
