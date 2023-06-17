@@ -114,7 +114,7 @@
             this.optNo.AutoSize = true;
             this.optNo.Location = new System.Drawing.Point(131, 29);
             this.optNo.Name = "optNo";
-            this.optNo.Size = new System.Drawing.Size(39, 17);
+            this.optNo.Size = new System.Drawing.Size(52, 26);
             this.optNo.TabIndex = 1;
             this.optNo.TabStop = true;
             this.optNo.Text = "No";
@@ -125,7 +125,7 @@
             this.optSi.AutoSize = true;
             this.optSi.Location = new System.Drawing.Point(41, 29);
             this.optSi.Name = "optSi";
-            this.optSi.Size = new System.Drawing.Size(34, 17);
+            this.optSi.Size = new System.Drawing.Size(47, 26);
             this.optSi.TabIndex = 0;
             this.optSi.TabStop = true;
             this.optSi.Text = "Si";
@@ -149,7 +149,7 @@
             this.chkDebate.AutoSize = true;
             this.chkDebate.Location = new System.Drawing.Point(131, 56);
             this.chkDebate.Name = "chkDebate";
-            this.chkDebate.Size = new System.Drawing.Size(61, 17);
+            this.chkDebate.Size = new System.Drawing.Size(74, 27);
             this.chkDebate.TabIndex = 3;
             this.chkDebate.Text = "Debate";
             this.chkDebate.UseVisualStyleBackColor = true;
@@ -159,7 +159,7 @@
             this.chkNotasReunion.AutoSize = true;
             this.chkNotasReunion.Location = new System.Drawing.Point(31, 56);
             this.chkNotasReunion.Name = "chkNotasReunion";
-            this.chkNotasReunion.Size = new System.Drawing.Size(92, 17);
+            this.chkNotasReunion.Size = new System.Drawing.Size(105, 27);
             this.chkNotasReunion.TabIndex = 2;
             this.chkNotasReunion.Text = "Notas reuniòn";
             this.chkNotasReunion.UseVisualStyleBackColor = true;
@@ -169,7 +169,7 @@
             this.chkInvestigacion.AutoSize = true;
             this.chkInvestigacion.Location = new System.Drawing.Point(131, 33);
             this.chkInvestigacion.Name = "chkInvestigacion";
-            this.chkInvestigacion.Size = new System.Drawing.Size(89, 17);
+            this.chkInvestigacion.Size = new System.Drawing.Size(102, 27);
             this.chkInvestigacion.TabIndex = 1;
             this.chkInvestigacion.Text = "Investigación";
             this.chkInvestigacion.UseVisualStyleBackColor = true;
@@ -179,7 +179,7 @@
             this.chkRepositorio.AutoSize = true;
             this.chkRepositorio.Location = new System.Drawing.Point(31, 33);
             this.chkRepositorio.Name = "chkRepositorio";
-            this.chkRepositorio.Size = new System.Drawing.Size(79, 17);
+            this.chkRepositorio.Size = new System.Drawing.Size(92, 27);
             this.chkRepositorio.TabIndex = 0;
             this.chkRepositorio.Text = "Repositorio";
             this.chkRepositorio.UseVisualStyleBackColor = true;
@@ -202,6 +202,7 @@
             this.btnCancelar.TabIndex = 10;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // frmRegistrar
             // 

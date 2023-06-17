@@ -29,13 +29,13 @@ namespace pryGestion
                     }
                     else
                     {
-                        MessageBox.Show("Te falta completar el detalle");
+                        MessageBox.Show("Te falta completar el detalle", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         txtDetalleActividad.Focus();
                     }
                 }
                 else
                 {
-                    MessageBox.Show("Seleccione una actividad");
+                    MessageBox.Show("Seleccione una actividad", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     lstTipoDeActividad.Focus(); 
                 }
 
@@ -47,6 +47,13 @@ namespace pryGestion
                 dtpFecha.Value = DateTime.Today;
                 dtpFecha.Focus();   
             }
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmMain frmMain = new frmMain();
+            frmMain.ShowDialog();
         }
     }
 }
