@@ -44,6 +44,7 @@
             this.chkRepositorio = new System.Windows.Forms.CheckBox();
             this.btnGrabar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
+            this.btnVer = new System.Windows.Forms.Button();
             this.mrcReunion.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -114,7 +115,7 @@
             this.optNo.AutoSize = true;
             this.optNo.Location = new System.Drawing.Point(131, 29);
             this.optNo.Name = "optNo";
-            this.optNo.Size = new System.Drawing.Size(52, 26);
+            this.optNo.Size = new System.Drawing.Size(39, 17);
             this.optNo.TabIndex = 1;
             this.optNo.TabStop = true;
             this.optNo.Text = "No";
@@ -125,7 +126,7 @@
             this.optSi.AutoSize = true;
             this.optSi.Location = new System.Drawing.Point(41, 29);
             this.optSi.Name = "optSi";
-            this.optSi.Size = new System.Drawing.Size(47, 26);
+            this.optSi.Size = new System.Drawing.Size(34, 17);
             this.optSi.TabIndex = 0;
             this.optSi.TabStop = true;
             this.optSi.Text = "Si";
@@ -149,7 +150,7 @@
             this.chkDebate.AutoSize = true;
             this.chkDebate.Location = new System.Drawing.Point(131, 56);
             this.chkDebate.Name = "chkDebate";
-            this.chkDebate.Size = new System.Drawing.Size(74, 27);
+            this.chkDebate.Size = new System.Drawing.Size(61, 17);
             this.chkDebate.TabIndex = 3;
             this.chkDebate.Text = "Debate";
             this.chkDebate.UseVisualStyleBackColor = true;
@@ -159,7 +160,7 @@
             this.chkNotasReunion.AutoSize = true;
             this.chkNotasReunion.Location = new System.Drawing.Point(31, 56);
             this.chkNotasReunion.Name = "chkNotasReunion";
-            this.chkNotasReunion.Size = new System.Drawing.Size(105, 27);
+            this.chkNotasReunion.Size = new System.Drawing.Size(92, 17);
             this.chkNotasReunion.TabIndex = 2;
             this.chkNotasReunion.Text = "Notas reuniòn";
             this.chkNotasReunion.UseVisualStyleBackColor = true;
@@ -169,7 +170,7 @@
             this.chkInvestigacion.AutoSize = true;
             this.chkInvestigacion.Location = new System.Drawing.Point(131, 33);
             this.chkInvestigacion.Name = "chkInvestigacion";
-            this.chkInvestigacion.Size = new System.Drawing.Size(102, 27);
+            this.chkInvestigacion.Size = new System.Drawing.Size(89, 17);
             this.chkInvestigacion.TabIndex = 1;
             this.chkInvestigacion.Text = "Investigación";
             this.chkInvestigacion.UseVisualStyleBackColor = true;
@@ -179,14 +180,14 @@
             this.chkRepositorio.AutoSize = true;
             this.chkRepositorio.Location = new System.Drawing.Point(31, 33);
             this.chkRepositorio.Name = "chkRepositorio";
-            this.chkRepositorio.Size = new System.Drawing.Size(92, 27);
+            this.chkRepositorio.Size = new System.Drawing.Size(79, 17);
             this.chkRepositorio.TabIndex = 0;
             this.chkRepositorio.Text = "Repositorio";
             this.chkRepositorio.UseVisualStyleBackColor = true;
             // 
             // btnGrabar
             // 
-            this.btnGrabar.Location = new System.Drawing.Point(163, 433);
+            this.btnGrabar.Location = new System.Drawing.Point(242, 433);
             this.btnGrabar.Name = "btnGrabar";
             this.btnGrabar.Size = new System.Drawing.Size(75, 23);
             this.btnGrabar.TabIndex = 9;
@@ -196,7 +197,7 @@
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(38, 433);
+            this.btnCancelar.Location = new System.Drawing.Point(149, 433);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(75, 23);
             this.btnCancelar.TabIndex = 10;
@@ -204,11 +205,22 @@
             this.btnCancelar.UseVisualStyleBackColor = true;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
+            // btnVer
+            // 
+            this.btnVer.Location = new System.Drawing.Point(18, 433);
+            this.btnVer.Name = "btnVer";
+            this.btnVer.Size = new System.Drawing.Size(89, 23);
+            this.btnVer.TabIndex = 11;
+            this.btnVer.Text = "Ver Actividades";
+            this.btnVer.UseVisualStyleBackColor = true;
+            this.btnVer.Click += new System.EventHandler(this.btnVer_Click);
+            // 
             // frmRegistrar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(329, 513);
+            this.Controls.Add(this.btnVer);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnGrabar);
             this.Controls.Add(this.groupBox2);
@@ -223,6 +235,7 @@
             this.MinimizeBox = false;
             this.Name = "frmRegistrar";
             this.Text = "frmRegistrar";
+            this.Load += new System.EventHandler(this.frmRegistrar_Load);
             this.mrcReunion.ResumeLayout(false);
             this.mrcReunion.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -250,5 +263,6 @@
         private System.Windows.Forms.CheckBox chkRepositorio;
         private System.Windows.Forms.Button btnGrabar;
         private System.Windows.Forms.Button btnCancelar;
+        private System.Windows.Forms.Button btnVer;
     }
 }

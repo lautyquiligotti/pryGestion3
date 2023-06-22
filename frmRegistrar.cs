@@ -29,13 +29,13 @@ namespace pryGestion
                     }
                     else
                     {
-                        MessageBox.Show("Te falta completar el detalle", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show("Te falta completar el detalle");
                         txtDetalleActividad.Focus();
                     }
                 }
                 else
                 {
-                    MessageBox.Show("Seleccione una actividad", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Seleccione una actividad");
                     lstTipoDeActividad.Focus(); 
                 }
 
@@ -54,6 +54,18 @@ namespace pryGestion
             this.Hide();
             frmMain frmMain = new frmMain();
             frmMain.ShowDialog();
+        }
+
+        private void btnVer_Click(object sender, EventArgs e)
+        {
+            frmMostrar frmMostrar = new frmMostrar();
+            frmMostrar.ShowDialog();
+            this.Hide();
+        }
+
+        private void frmRegistrar_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
