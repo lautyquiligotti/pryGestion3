@@ -12,20 +12,67 @@ namespace pryGestion
 {
     public partial class frmRegistrar : Form
     {
+        frmMostrar frmMostrar1 = new frmMostrar();
         public frmRegistrar()
         {
             InitializeComponent();
         }
 
+        string[] vectorActividad = new string[10];
+        string reunion = " ";
+        string tareas = " ";
+        string fecha = "";
+        string actividad;
+        string detalle;
+        int i = 0;
         private void button1_Click(object sender, EventArgs e)
         {
             if (dtpFecha.Value >= DateTime.Today)
             {
+                fecha = dtpFecha.Value.ToString();
+
                 if (lstTipoDeActividad.SelectedIndex != 1)
                 {
+                    actividad = lstTipoDeActividad.Text;
+
                     if (txtDetalleActividad.Text != "")
                     {
+                        detalle = txtDetalleActividad.Text;
+                        if (optSi.Checked == true)
+                        {
+                            reunion = "SI";
+                        }
+                        else
+                        {
+                            reunion = "NO";
+                        }
+
+                        if (chkDebate.Checked)
+                        {
+                            tareas = "Debate";
+                        }
+                        if (chkInvestigacion.Checked) ;
+                        {
+                            tareas = tareas + "Investigacion";
+                        }
+                        if (chkNotasReunion.Checked) ;
+                        {
+                            tareas = tareas + "Notas";
+                        }
+                        if (chkRepositorio.Checked)
+                        {
+                            tareas = tareas + "Repositorio";
+                        }
                         MessageBox.Show("Vamos a grabar");
+
+                        frmMostrar1.matrizMostrar[i, 0] = fecha;
+                        frmMostrar1.matrizMostrar[i, 1] = actividad;
+                        frmMostrar1.matrizMostrar[i, 2] = detalle;
+                        frmMostrar1.matrizMostrar[i, 3] = reunion;
+                        frmMostrar1.matrizMostrar[i, 4] = tareas;
+                        i++;
+
+
                     }
                     else
                     {
@@ -44,7 +91,7 @@ namespace pryGestion
             {
                 MessageBox.Show("Seleccione una fecha actual o posterior a la de hoy", "Carga de tarea",
                     MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                dtpFecha.Value = DateTime.Today;
+                
                 dtpFecha.Focus();   
             }
         }
@@ -58,8 +105,7 @@ namespace pryGestion
 
         private void btnVer_Click(object sender, EventArgs e)
         {
-            frmMostrar frmMostrar = new frmMostrar();
-            frmMostrar.ShowDialog();
+            frmMostrar1.ShowDialog();
             this.Hide();
         }
 

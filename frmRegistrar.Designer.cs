@@ -85,6 +85,13 @@
             // lstTipoDeActividad
             // 
             this.lstTipoDeActividad.FormattingEnabled = true;
+            this.lstTipoDeActividad.Items.AddRange(new object[] {
+            "Relevamiento",
+            "Propuesta",
+            "Diagnostico",
+            "Analisis",
+            "Diagrama de base de datos",
+            "Programacion"});
             this.lstTipoDeActividad.Location = new System.Drawing.Point(97, 54);
             this.lstTipoDeActividad.Name = "lstTipoDeActividad";
             this.lstTipoDeActividad.Size = new System.Drawing.Size(121, 21);
@@ -124,6 +131,7 @@
             // optSi
             // 
             this.optSi.AutoSize = true;
+            this.optSi.Checked = true;
             this.optSi.Location = new System.Drawing.Point(41, 29);
             this.optSi.Name = "optSi";
             this.optSi.Size = new System.Drawing.Size(34, 17);
@@ -219,7 +227,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(329, 513);
+            this.ClientSize = new System.Drawing.Size(367, 513);
             this.Controls.Add(this.btnVer);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnGrabar);
