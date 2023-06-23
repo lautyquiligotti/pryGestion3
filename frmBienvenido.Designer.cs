@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmBienvenido));
             this.btnRegistrar = new System.Windows.Forms.Button();
             this.btnVer = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -61,8 +62,9 @@
             this.ClientSize = new System.Drawing.Size(909, 495);
             this.Controls.Add(this.btnVer);
             this.Controls.Add(this.btnRegistrar);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmBienvenido";
-            this.Text = "frmBienvenido";
+            this.Text = "Bienvenido";
             this.ResumeLayout(false);
 
         }

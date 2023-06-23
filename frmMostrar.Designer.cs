@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMostrar));
             this.cboFiltrarActividad = new System.Windows.Forms.ComboBox();
             this.lblActividad = new System.Windows.Forms.Label();
             this.btnVolver = new System.Windows.Forms.Button();
@@ -129,14 +130,15 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(647, 450);
             this.Controls.Add(this.btnMostrar);
             this.Controls.Add(this.dtvMatriz);
             this.Controls.Add(this.btnVolver);
             this.Controls.Add(this.lblActividad);
             this.Controls.Add(this.cboFiltrarActividad);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmMostrar";
-            this.Text = "frmMostrar";
+            this.Text = "Mostrar";
             this.Load += new System.EventHandler(this.frmMostrar_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dtvMatriz)).EndInit();
             this.ResumeLayout(false);
