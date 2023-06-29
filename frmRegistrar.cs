@@ -66,7 +66,7 @@ namespace pryGestion
                         MessageBox.Show("Vamos a grabar");
 
                         frmMostrar1.matrizMostrar[i, 0] = fecha;
-                        frmMostrar1.matrizMostrar[i, 1] = actividad;
+                        frmMostrar1.matrizMostrar[i, 1] = actividad; 
                         frmMostrar1.matrizMostrar[i, 2] = detalle;
                         frmMostrar1.matrizMostrar[i, 3] = reunion;
                         frmMostrar1.matrizMostrar[i, 4] = tareas;

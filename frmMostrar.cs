@@ -45,6 +45,7 @@ namespace pryGestion
 
         private void btnMostrar_Click(object sender, EventArgs e)
         {
+            dtvMatriz.Rows.Clear();
             for (int i = 0; i < matrizMostrar.GetLength(0); i++)
             {
                 if (matrizMostrar[i,c] != null)
